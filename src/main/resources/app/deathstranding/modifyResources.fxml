@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1980.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.deathstranding.ModifyResources">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1980.0" pickOnBounds="true">
+         <image>
+            <Image url="@resourceBackgroun.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="350.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bigChiral.png" />
+         </image>
+         <effect>
+            <DropShadow height="255.0" radius="127.0" spread="0.25" width="255.0">
+               <color>
+                  <Color red="0.18039216101169586" green="0.38823530077934265" blue="0.6000000238418579" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="915.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow height="255.0" radius="127.0" spread="0.25" width="255.0">
+               <color>
+                  <Color red="0.18039216101169586" green="0.38823530077934265" blue="0.6000000238418579" />
+               </color>
+            </DropShadow>
+         </effect>
+         <image>
+            <Image url="@bigResin.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="1480.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow height="255.0" radius="127.0" spread="0.25" width="255.0">
+               <color>
+                  <Color red="0.18039216101169586" green="0.38823530077934265" blue="0.6000000238418579" />
+               </color>
+            </DropShadow>
+         </effect>
+         <image>
+            <Image url="@bigMetal.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="350.0" layoutY="525.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow height="255.0" radius="127.0" spread="0.25" width="255.0">
+               <color>
+                  <Color red="0.18039216101169586" green="0.38823530077934265" blue="0.6000000238418579" />
+               </color>
+            </DropShadow>
+         </effect>
+         <image>
+            <Image url="@bigCeramic.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="915.0" layoutY="525.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow height="255.0" radius="127.0" spread="0.25" width="255.0">
+               <color>
+                  <Color red="0.18039216101169586" green="0.38823530077934265" blue="0.6000000238418579" />
+               </color>
+            </DropShadow>
+         </effect>
+         <image>
+            <Image url="@bigChemical.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="1480.0" layoutY="525.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow height="255.0" radius="127.0" spread="0.25" width="255.0">
+               <color>
+                  <Color red="0.18039216101169586" green="0.38823530077934265" blue="0.6000000238418579" />
+               </color>
+            </DropShadow>
+         </effect>
+         <image>
+            <Image url="@bigAlloy.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="chiralInput" alignment="CENTER" layoutX="312.0" layoutY="350.0" prefHeight="72.0" prefWidth="224.0" promptText="0" style="-fx-background-color: #0000; -fx-text-fill: #68dcfbbb;">
+         <font>
+            <Font name="Sansumi-DemiBold" size="48.0" />
+         </font>
+      </TextField>
+      <Line endX="350.0" layoutX="244.0" layoutY="440.0" stroke="#2f6499cc" strokeWidth="4.0" />
+      <TextField fx:id="resinInput" alignment="CENTER" layoutX="878.0" layoutY="350.0" prefHeight="72.0" prefWidth="224.0" promptText="0" style="-fx-background-color: #0000; -fx-text-fill: #68dcfbbb;">
+         <font>
+            <Font name="Sansumi-DemiBold" size="48.0" />
+         </font>
+      </TextField>
+      <Line endX="350.0" layoutX="815.0" layoutY="440.0" stroke="#2f6499cc" strokeWidth="4.0" />
+      <Line endX="350.0" layoutX="1380.0" layoutY="440.0" stroke="#2f6499cc" strokeWidth="4.0" />
+      <TextField fx:id="metalInput" alignment="CENTER" layoutX="1443.0" layoutY="350.0" prefHeight="72.0" prefWidth="224.0" promptText="0" style="-fx-background-color: #0000; -fx-text-fill: #68dcfbbb;">
+         <font>
+            <Font name="Sansumi-DemiBold" size="48.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="ceramicInput" alignment="CENTER" layoutX="312.0" layoutY="750.0" prefHeight="72.0" prefWidth="224.0" promptText="0" style="-fx-background-color: #0000; -fx-text-fill: #68dcfbbb;">
+         <font>
+            <Font name="Sansumi-DemiBold" size="48.0" />
+         </font>
+      </TextField>
+      <Line endX="350.0" layoutX="244.0" layoutY="840.0" stroke="#2f6499cc" strokeWidth="4.0" />
+      <TextField fx:id="chemicalInput" alignment="CENTER" layoutX="878.0" layoutY="750.0" prefHeight="72.0" prefWidth="224.0" promptText="0" style="-fx-background-color: #0000; -fx-text-fill: #68dcfbbb;">
+         <font>
+            <Font name="Sansumi-DemiBold" size="48.0" />
+         </font>
+      </TextField>
+      <Line endX="350.0" layoutX="815.0" layoutY="840.0" stroke="#2f6499cc" strokeWidth="4.0" />
+      <TextField fx:id="alloyInput" alignment="CENTER" layoutX="1443.0" layoutY="750.0" prefHeight="72.0" prefWidth="224.0" promptText="0" style="-fx-background-color: #0000; -fx-text-fill: #68dcfbbb;">
+         <font>
+            <Font name="Sansumi-DemiBold" size="48.0" />
+         </font>
+      </TextField>
+      <Line endX="350.0" layoutX="1380.0" layoutY="840.0" stroke="#2f6499cc" strokeWidth="4.0" />
+      <Line endX="520.0" layoutX="554.0" layoutY="978.0" stroke="#2f6499cc" strokeWidth="4.0" />
+      <ImageView fitHeight="88.0" fitWidth="318.0" layoutX="143.0" layoutY="890.0" onMouseClicked="#backToMainMenu" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@locationModified.png" />
+         </image>
+         <effect>
+            <DropShadow height="35.0" radius="17.0" width="35.0">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <TextField fx:id="locationInput" alignment="CENTER" layoutX="554.0" layoutY="890.0" prefHeight="72.0" prefWidth="520.0" promptText="Enter Location..." style="-fx-background-color: #0000; -fx-text-fill: #68dcfbbb;">
+         <font>
+            <Font name="Sansumi-DemiBold" size="48.0" />
+         </font>
+      </TextField>
+      <Line endX="200.0" layoutX="1213.0" layoutY="978.0" stroke="WHITE" strokeLineCap="ROUND" strokeWidth="3.0">
+         <effect>
+            <DropShadow height="30.0" radius="14.5" spread="0.1" width="30.0">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Line>
+      <Line endX="200.0" layoutX="1213.0" layoutY="890.0" stroke="WHITE" strokeLineCap="ROUND" strokeWidth="3.0">
+         <effect>
+            <DropShadow height="30.0" radius="14.5" spread="0.1" width="30.0">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Line>
+      <Label alignment="CENTER" layoutX="1250.5" layoutY="907.0" onMouseClicked="#addResources" prefHeight="54.0" prefWidth="125.0" text="Add" textFill="WHITE">
+         <font>
+            <Font name="Sansumi-DemiBold" size="48.0" />
+         </font>
+         <effect>
+            <DropShadow height="30.0" radius="14.5" spread="0.1" width="30.0">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Line endX="325.0" layoutX="1523.0" layoutY="890.0" stroke="WHITE" strokeLineCap="ROUND" strokeWidth="3.0">
+         <effect>
+            <DropShadow height="30.0" radius="14.5" spread="0.1" width="30.0">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Line>
+      <Line endX="325.0" layoutX="1523.0" layoutY="978.0" stroke="WHITE" strokeLineCap="ROUND" strokeWidth="3.0">
+         <effect>
+            <DropShadow height="30.0" radius="14.5" spread="0.1" width="30.0">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Line>
+      <Label alignment="CENTER" layoutX="1560.5" layoutY="907.0" onMouseClicked="#removeResources" prefHeight="54.0" prefWidth="250.0" text="Remove" textFill="WHITE">
+         <font>
+            <Font name="Sansumi-DemiBold" size="48.0" />
+         </font>
+         <effect>
+            <DropShadow height="30.0" radius="14.5" spread="0.1" width="30.0">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="actionPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1980.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.deathstranding.PrintFacilityController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1982.0" pickOnBounds="true">
+         <image>
+            <Image url="@addFacility.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="1080.0" fitWidth="1980.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@backdrop1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="401.0" fitWidth="708.0" layoutX="636.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@facility1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="backToMenuButton" fitHeight="100.0" fitWidth="100.0" layoutX="100.0" layoutY="107.0" onMouseClicked="#backToMainMenu" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@mainIcon.png" />
+         </image>
+         <effect>
+            <DropShadow height="100.0" radius="49.5" spread="0.1" width="100.0">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="688.0" layoutY="800.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane layoutX="427.5" layoutY="750.0" prefHeight="100.0" prefWidth="1125.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@chiralIcon.png" />
+               </image>
+               <effect>
+                  <DropShadow height="200.0" radius="99.5" spread="0.71" width="200.0">
+                     <color>
+                        <Color red="0.18039216101169586" green="0.38823530077934265" blue="0.6000000238418579" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="205.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resinIcon.png" />
+               </image>
+               <effect>
+                  <DropShadow height="200.0" radius="99.5" spread="0.71" width="200.0">
+                     <color>
+                        <Color red="0.18039216101169586" green="0.38823530077934265" blue="0.6000000238418579" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="410.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@metalIcon.png" />
+               </image>
+               <effect>
+                  <DropShadow height="200.0" radius="99.5" spread="0.71" width="200.0">
+                     <color>
+                        <Color red="0.18039216101169586" green="0.38823530077934265" blue="0.6000000238418579" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="615.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow height="200.0" radius="99.5" spread="0.71" width="200.0">
+                     <color>
+                        <Color red="0.18039216101169586" green="0.38823530077934265" blue="0.6000000238418579" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <image>
+                  <Image url="@ceramicIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="820.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow height="200.0" radius="99.5" spread="0.71" width="200.0">
+                     <color>
+                        <Color red="0.18039216101169586" green="0.38823530077934265" blue="0.6000000238418579" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <image>
+                  <Image url="@chemicalIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="1025.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow height="200.0" radius="99.5" spread="0.71" width="200.0">
+                     <color>
+                        <Color red="0.18039216101169586" green="0.38823530077934265" blue="0.6000000238418579" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <image>
+                  <Image url="@alloyIcon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="locationLabel" alignment="CENTER" layoutX="65.0" layoutY="575.0" prefHeight="100.0" prefWidth="1850.0" text="Click Here to start" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Sansumi-DemiBold" size="64.0" />
+         </font>
+      </Label>
+      <Label fx:id="chiralLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="372.5" layoutY="910.0" prefHeight="54.0" prefWidth="210.0" text="9999" textAlignment="CENTER" textFill="#fcfcfc">
+         <font>
+            <Font name="Sansumi-DemiBold" size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="resinLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="577.5" layoutY="910.0" prefHeight="54.0" prefWidth="210.0" text="9999" textAlignment="CENTER" textFill="#fcfcfc">
+         <font>
+            <Font name="Sansumi-DemiBold" size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="metalLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="782.5" layoutY="910.0" prefHeight="54.0" prefWidth="210.0" text="9999" textAlignment="CENTER" textFill="#fcfcfc">
+         <font>
+            <Font name="Sansumi-DemiBold" size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="ceramicLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="987.5" layoutY="910.0" prefHeight="54.0" prefWidth="210.0" text="9999" textAlignment="CENTER" textFill="#fcfcfc">
+         <font>
+            <Font name="Sansumi-DemiBold" size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="chemicalLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="1192.5" layoutY="910.0" prefHeight="54.0" prefWidth="210.0" text="9999" textAlignment="CENTER" textFill="#fcfcfc">
+         <font>
+            <Font name="Sansumi-DemiBold" size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="alloyLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="1397.5" layoutY="910.0" prefHeight="54.0" prefWidth="210.0" text="9999" textAlignment="CENTER" textFill="#fcfcfc">
+         <font>
+            <Font name="Sansumi-DemiBold" size="48.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
