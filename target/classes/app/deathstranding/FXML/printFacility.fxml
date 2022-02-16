@@ -12,22 +12,22 @@
    <children>
       <ImageView fitHeight="1080.0" fitWidth="1982.0" pickOnBounds="true">
          <image>
-            <Image url="@addFacility.JPG" />
+            <Image url="@../images/addFacility.JPG" />
          </image>
       </ImageView>
       <ImageView fitHeight="1080.0" fitWidth="1980.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@backdrop1.png" />
+            <Image url="@../images/backdrop1.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="401.0" fitWidth="708.0" layoutX="636.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@facility1.png" />
+            <Image url="@../images/facility1.png" />
          </image>
       </ImageView>
       <ImageView fx:id="backToMenuButton" fitHeight="100.0" fitWidth="100.0" layoutX="100.0" layoutY="107.0" onMouseClicked="#backToMainMenu" opacity="0.5" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@mainIcon.png" />
+            <Image url="@../images/mainIcon.png" />
          </image>
          <effect>
             <DropShadow height="100.0" radius="49.5" spread="0.1" width="100.0">
@@ -42,7 +42,7 @@
          <children>
             <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@chiralIcon.png" />
+                  <Image url="@../images/chiralIcon.png" />
                </image>
                <effect>
                   <DropShadow height="200.0" radius="99.5" spread="0.71" width="200.0">
@@ -54,7 +54,7 @@
             </ImageView>
             <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="205.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@resinIcon.png" />
+                  <Image url="@../images/resinIcon.png" />
                </image>
                <effect>
                   <DropShadow height="200.0" radius="99.5" spread="0.71" width="200.0">
@@ -66,7 +66,7 @@
             </ImageView>
             <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="410.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@metalIcon.png" />
+                  <Image url="@../images/metalIcon.png" />
                </image>
                <effect>
                   <DropShadow height="200.0" radius="99.5" spread="0.71" width="200.0">
@@ -85,7 +85,7 @@
                   </DropShadow>
                </effect>
                <image>
-                  <Image url="@ceramicIcon.png" />
+                  <Image url="@../images/ceramicIcon.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="820.0" pickOnBounds="true" preserveRatio="true">
@@ -97,7 +97,7 @@
                   </DropShadow>
                </effect>
                <image>
-                  <Image url="@chemicalIcon.png" />
+                  <Image url="@../images/chemicalIcon.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="1025.0" pickOnBounds="true" preserveRatio="true">
@@ -109,7 +109,7 @@
                   </DropShadow>
                </effect>
                <image>
-                  <Image url="@alloyIcon.png" />
+                  <Image url="@../images/alloyIcon.png" />
                </image>
             </ImageView>
          </children>

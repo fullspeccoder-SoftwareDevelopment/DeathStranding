@@ -27,7 +27,7 @@ public class mainMenuController {
     public void switchToPrintScene(MouseEvent event) throws IOException {
 
         // Creates an FXMLLoader to load FXML content
-        FXMLLoader loader  = new FXMLLoader(getClass().getResource("printFacility.fxml"));
+        FXMLLoader loader  = new FXMLLoader(getClass().getResource("FXML/printFacility.fxml"));
 
         // Puts the FXML into the Parent Object
         root = loader.load();
@@ -61,7 +61,7 @@ public class mainMenuController {
     public void switchToAddFacilityScene(MouseEvent event) throws IOException {
 
         // Creates an FXMLLoader to load FXML content
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("addFacility.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("FXML/addFacility.fxml"));
 
         // Puts the FXML into the Parent Object
         root = loader.load();
@@ -80,7 +80,7 @@ public class mainMenuController {
     public void switchToModifyResourcesScene(MouseEvent event) throws IOException {
 
         // Creates an FXMLLoader to load FXML content
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("modifyResources.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("FXML/modifyResources.fxml"));
 
         // Puts the FXML into the Parent Object
         root = loader.load();

@@ -14,12 +14,12 @@
    <children>
       <ImageView fitHeight="1080.0" fitWidth="1980.0" pickOnBounds="true">
          <image>
-            <Image url="@resourceBackgroun.png" />
+            <Image url="@../images/resourceBackgroun.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="350.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@bigChiral.png" />
+            <Image url="@../images/bigChiral.png" />
          </image>
          <effect>
             <DropShadow height="255.0" radius="127.0" spread="0.25" width="255.0">
@@ -38,7 +38,7 @@
             </DropShadow>
          </effect>
          <image>
-            <Image url="@bigResin.png" />
+            <Image url="@../images/bigResin.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="1480.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
@@ -50,7 +50,7 @@
             </DropShadow>
          </effect>
          <image>
-            <Image url="@bigMetal.png" />
+            <Image url="@../images/bigMetal.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="350.0" layoutY="525.0" pickOnBounds="true" preserveRatio="true">
@@ -62,7 +62,7 @@
             </DropShadow>
          </effect>
          <image>
-            <Image url="@bigCeramic.png" />
+            <Image url="@../images/bigCeramic.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="915.0" layoutY="525.0" pickOnBounds="true" preserveRatio="true">
@@ -74,7 +74,7 @@
             </DropShadow>
          </effect>
          <image>
-            <Image url="@bigChemical.png" />
+            <Image url="@../images/bigChemical.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="1480.0" layoutY="525.0" pickOnBounds="true" preserveRatio="true">
@@ -86,7 +86,7 @@
             </DropShadow>
          </effect>
          <image>
-            <Image url="@bigAlloy.png" />
+            <Image url="@../images/bigAlloy.png" />
          </image>
       </ImageView>
       <TextField fx:id="chiralInput" alignment="CENTER" layoutX="312.0" layoutY="350.0" prefHeight="72.0" prefWidth="224.0" promptText="0" style="-fx-background-color: #0000; -fx-text-fill: #68dcfbbb;">
@@ -128,7 +128,7 @@
       <Line endX="520.0" layoutX="554.0" layoutY="978.0" stroke="#2f6499cc" strokeWidth="4.0" />
       <ImageView fitHeight="88.0" fitWidth="318.0" layoutX="143.0" layoutY="890.0" onMouseClicked="#backToMainMenu" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@locationModified.png" />
+            <Image url="@../images/locationModified.png" />
          </image>
          <effect>
             <DropShadow height="35.0" radius="17.0" width="35.0">

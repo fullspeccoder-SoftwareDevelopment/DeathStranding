@@ -60,7 +60,7 @@ public class AddFacilityController {
     public void backToMainMenu(MouseEvent event) throws IOException {
 
         // Loads FXML into a Parent Object
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("mainMenu.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("FXML/mainMenu.fxml")));
 
         // Gets the stage from the node
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
