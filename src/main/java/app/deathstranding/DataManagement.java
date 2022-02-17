@@ -80,7 +80,7 @@ public class DataManagement {
 
     }
 
-    public static void addToTable(String location, Storage tempStorage) throws SQLException {
+    public static boolean addedToTable(String location, Storage tempStorage) throws SQLException {
 
         // Checks if location has a storage
         if (!facilities.containsKey(location)) {
@@ -91,14 +91,14 @@ public class DataManagement {
              // Adds location & storage to new facility hashtable to add to the database when program ends
             newToFacilities.put(location, tempStorage);
             myStmt.executeUpdate(createInsertStatement(location));
-            System.out.println("Facility Successfully Added!");
+
+            // Return statement meant for communication between controllers for confirmation screens
+            return true;
 
         }
         else {
-
-            // Prints error message for non-null value in facilities location
-            System.out.println("Facility already exists");
-
+            // Return statement meant for communication between controllers for confirmation screens
+            return false;
         }
 
     }
@@ -137,8 +137,7 @@ public class DataManagement {
         // Goes through each location in newToFacilities key set
         for(String location: newToFacilities.keySet()) {
 
-            String updateStatement = createUpdateStatement(location);
-            myStmt.executeUpdate(updateStatement);
+            myStmt.executeUpdate(createUpdateStatement(location));
 
         }
     }

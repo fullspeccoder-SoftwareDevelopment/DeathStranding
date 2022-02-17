@@ -2,6 +2,7 @@ package app.deathstranding;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Group;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -33,6 +34,8 @@ public class ModifyResources {
     private TextField alloyInput;
     @FXML
     private TextField locationInput;
+    @FXML
+    private Group groupLabel;
 
     public void addResources(MouseEvent event) throws SQLException {
 
