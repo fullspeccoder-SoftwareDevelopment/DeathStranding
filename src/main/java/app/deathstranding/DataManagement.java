@@ -103,7 +103,7 @@ public class DataManagement {
 
     }
 
-    public static void modifyLocationResources(String location, Storage tempStorage) {
+    public static boolean modifyLocationResources(String location, Storage tempStorage) {
 
         // Checks if location exists
         if (facilities.containsKey(location)) {
@@ -122,12 +122,12 @@ public class DataManagement {
             facilities.get(location).setChemicals(facilityChemicals + tempStorage.getChemicals());
             facilities.get(location).setSpecialAlloys(facilityAlloys + tempStorage.getSpecialAlloys());
             newToFacilities.put(location, facilities.get(location));
+            return true;
 
         }
         else {
 
-            // Prints error message for null value in facilities location
-            System.out.println("Facility does not exist");
+            return false;
 
         }
     }

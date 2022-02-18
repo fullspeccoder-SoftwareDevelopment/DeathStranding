@@ -68,7 +68,7 @@
             <Image url="@../images/PrivateLocker.png" />
          </image>
       </ImageView>
-      <Label alignment="CENTER" layoutX="100.0" layoutY="980.0" text="V 1.0" textAlignment="CENTER" textFill="WHITE">
+      <Label alignment="CENTER" layoutX="100.0" layoutY="980.0" text="V 1.2" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="36.0" />
          </font>

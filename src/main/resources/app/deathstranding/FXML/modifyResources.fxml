@@ -1,17 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1980.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.deathstranding.ModifyResources">
    <children>
+      <Group fx:id="groupLabel" layoutX="117.0" layoutY="175.0">
+         <children>
+            <ImageView fitHeight="650.0" fitWidth="1680.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/backdrop3.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6edefa" height="10.0" layoutX="40.0" layoutY="40.0" stroke="BLACK" strokeType="INSIDE" width="15.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6edefa" height="10.0" layoutX="1620.0" layoutY="40.0" stroke="BLACK" strokeType="INSIDE" width="15.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6edefa" height="10.0" layoutX="1620.0" layoutY="600.0" stroke="BLACK" strokeType="INSIDE" width="15.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6edefa" height="10.0" layoutX="40.0" layoutY="600.0" stroke="BLACK" strokeType="INSIDE" width="15.0" />
+            <Line fx:id="line" endX="1440.0" layoutX="119.0" layoutY="437.0" strokeWidth="2.0">
+               <stroke>
+                  <LinearGradient cycleMethod="REPEAT" endX="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.40784314274787903" green="0.8627451062202454" blue="0.9843137264251709" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007532956685499058">
+                           <color>
+                              <Color red="0.40784314274787903" green="0.8745098114013672" blue="0.7960784435272217" opacity="0.25" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.9887005649717514">
+                           <color>
+                              <Color red="0.40784314274787903" green="0.8627451062202454" blue="0.9843137264251709" opacity="0.25" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.40784314274787903" green="0.8627451062202454" blue="0.9843137264251709" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Line>
+            <Label fx:id="confirmLabel" alignment="CENTER" layoutX="322.0" layoutY="462.0" prefHeight="125.0" prefWidth="500.0" style="-fx-background-color: #2e6399;" text="OK" textAlignment="CENTER" textFill="#addee7">
+               <font>
+                  <Font name="Lucida Grande" size="48.0" />
+               </font>
+               <padding>
+                  <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+               </padding>
+               <effect>
+                  <InnerShadow choke="0.25" height="100.0" radius="49.5" width="100.0">
+                     <color>
+                        <Color red="0.4311999976634979" green="0.8702399730682373" blue="0.9800000190734863" opacity="0.5" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Label>
+            <Label fx:id="cancelLabel" alignment="CENTER" graphicTextGap="0.0" layoutX="872.0" layoutY="462.0" onMouseClicked="#hideConfirmationPrompt" prefHeight="125.0" prefWidth="500.0" text="Cancel" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font name="Lucida Grande" size="48.0" />
+               </font>
+               <padding>
+                  <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+               </padding>
+               <effect>
+                  <InnerShadow choke="0.25" height="100.0" radius="49.5" width="100.0">
+                     <color>
+                        <Color red="0.40784314274787903" green="0.8627451062202454" blue="0.9843137264251709" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Label>
+            <Rectangle fx:id="rec8" fill="#6edefa" height="5.0" layoutX="311.0" layoutY="462.0" stroke="#6edefa" strokeMiterLimit="0.0" strokeType="OUTSIDE" width="10.0" />
+            <Rectangle fx:id="rec7" fill="#6edefa" height="5.0" layoutX="821.0" layoutY="462.0" smooth="false" stroke="#6edefa" strokeMiterLimit="0.0" width="10.0" />
+            <Rectangle fx:id="rec6" fill="#6edefa" height="5.0" layoutX="311.0" layoutY="580.0" stroke="#6edefa" strokeMiterLimit="0.0" strokeType="OUTSIDE" width="10.0" />
+            <Rectangle fx:id="rec5" fill="#6edefa" height="5.0" layoutX="821.0" layoutY="580.0" stroke="#6edefa" strokeMiterLimit="0.0" strokeType="OUTSIDE" width="10.0" />
+            <Rectangle fx:id="rec4" fill="#6edefa" height="5.0" layoutX="861.0" layoutY="462.0" stroke="#6edefa" strokeMiterLimit="0.0" strokeType="OUTSIDE" width="10.0" />
+            <Rectangle fx:id="rec3" fill="#6edefa" height="5.0" layoutX="861.0" layoutY="580.0" stroke="#6edefa" strokeMiterLimit="0.0" strokeType="OUTSIDE" width="10.0" />
+            <Rectangle fx:id="rec2" fill="#6edefa" height="5.0" layoutX="1371.0" layoutY="580.0" stroke="#6edefa" strokeMiterLimit="0.0" strokeType="OUTSIDE" width="10.0" />
+            <Rectangle fx:id="rec1" fill="#6edefa" height="5.0" layoutX="1371.0" layoutY="462.0" stroke="#6edefa" strokeMiterLimit="0.0" strokeType="OUTSIDE" width="10.0" />
+            <Label fx:id="textLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="100.0" layoutY="83.0" prefHeight="300.0" prefWidth="1480.0" text="Are you sure you want to add this facility?" textAlignment="JUSTIFY" textFill="#e5e5e5" wrapText="true">
+               <font>
+                  <Font name="Lucida Grande" size="64.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
       <ImageView fitHeight="1080.0" fitWidth="1980.0" pickOnBounds="true">
          <image>
             <Image url="@../images/resourceBackgroun.png" />
@@ -161,7 +251,7 @@
             </DropShadow>
          </effect>
       </Line>
-      <Label alignment="CENTER" layoutX="1250.5" layoutY="907.0" onMouseClicked="#addResources" prefHeight="54.0" prefWidth="125.0" text="Add" textFill="WHITE">
+      <Label alignment="CENTER" layoutX="1250.5" layoutY="907.0" onMouseClicked="#showConfirmationPromptFromAdd" prefHeight="54.0" prefWidth="125.0" text="Add" textFill="WHITE">
          <font>
             <Font name="Sansumi-DemiBold" size="48.0" />
          </font>
@@ -191,7 +281,7 @@
             </DropShadow>
          </effect>
       </Line>
-      <Label alignment="CENTER" layoutX="1560.5" layoutY="907.0" onMouseClicked="#removeResources" prefHeight="54.0" prefWidth="250.0" text="Remove" textFill="WHITE">
+      <Label alignment="CENTER" layoutX="1560.5" layoutY="907.0" onMouseClicked="#showConfirmationPromptFromRemove" prefHeight="54.0" prefWidth="250.0" text="Remove" textFill="WHITE">
          <font>
             <Font name="Sansumi-DemiBold" size="48.0" />
          </font>

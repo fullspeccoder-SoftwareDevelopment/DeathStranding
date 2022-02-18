@@ -60,26 +60,7 @@ public class AddFacilityController {
     @FXML
     private Label textLabel;
 
-    private void rearrangeElements() {
-
-        // Hides all the small rectangles for the cancel Button
-        rec1.setVisible(false);
-        rec2.setVisible(false);
-        rec3.setVisible(false);
-        rec4.setVisible(false);
-        cancelLabel.setVisible(false);
-
-        // Moves Main Menu button over to the middle
-        confirmLabel.setLayoutX(590);
-        rec8.setLayoutX(579);
-        rec7.setLayoutX(1091);
-        rec6.setLayoutX(579);
-        rec5.setLayoutX(1091);
-        confirmLabel.setText("Back to Main Menu");
-        textLabel.setText("Facility Successfully Added!");
-    }
-
-    public void addFacility(MouseEvent event) throws SQLException, IOException {
+    public void addFacility() throws SQLException, IOException {
 
         // Parses all the integers in the amounts provided
         int chiralAmount = Integer.parseInt(chiralInput.getText());
@@ -94,23 +75,52 @@ public class AddFacilityController {
 
         if(DataManagement.addedToTable(locationInput.getText(), tempStorage)) {
 
-            rearrangeElements();
+            rearrangeConfirmationElements();
 
             // Sets up a click event for the confirmation button to go back to the main menu
             confirmLabel.setOnMouseClicked(mouseEvent -> {
+
                 try {
                     backToMainMenu(mouseEvent);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
+
+                resetConfirmLabel();
+
             });
         }
         else {
-            hideConfirmationPrompt();
+
+            // Sets labels for error screen
+            textLabel.setText("Facility already exists.\nWhat would you like to do?");
+            confirmLabel.setText("Back to Main Menu");
+
+            // When clicking mouse on confirmation label, it will go back to main menu
+            confirmLabel.setOnMouseClicked(mouseEvent -> {
+
+                try {
+                    backToMainMenu(mouseEvent);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                // Resets back to original settings for confirmation label
+                confirmLabel.setText("OK");
+                resetConfirmLabel();
+
+            });
+
+            cancelLabel.setText("Add New Facility");
+            cancelLabel.setOnMouseClicked(mouseEvent -> {
+                textLabel.setText("Are you sure you want to add this facility?");
+                confirmLabel.setText("OK");
+                cancelLabel.setText("Cancel");
+                hideConfirmationPrompt();
+                resetConfirmLabel();
+
+            });
         }
-
-
-
     }
 
     public void backToMainMenu(MouseEvent event) throws IOException {
@@ -136,5 +146,38 @@ public class AddFacilityController {
 
     public void showConfirmationPrompt() {
         groupLabel.toFront();
+    }
+
+    private void resetConfirmLabel() {
+
+        // Sets mouse click on confirmation label back to original function call
+        confirmLabel.setOnMouseClicked(mouseEvent1 -> {
+            try {
+                addFacility();
+            } catch (SQLException | IOException e) {
+                e.printStackTrace();
+            }
+        });
+
+    }
+
+    private void rearrangeConfirmationElements() {
+
+        // Hides all the small rectangles for the cancel Button
+        rec1.setVisible(false);
+        rec2.setVisible(false);
+        rec3.setVisible(false);
+        rec4.setVisible(false);
+        cancelLabel.setVisible(false);
+
+        // Moves Main Menu button over to the middle
+        confirmLabel.setLayoutX(590);
+        rec8.setLayoutX(579);
+        rec7.setLayoutX(1091);
+        rec6.setLayoutX(579);
+        rec5.setLayoutX(1091);
+        confirmLabel.setText("Back to Main Menu");
+        textLabel.setText("Facility Successfully Added!");
+
     }
 }
